@@ -10,8 +10,9 @@ assetsSummary:
   numberOfBytes: 0
   numberOfFiles: 0
   schemaKey: AssetsSummary
-citation: Mehrotra, Dhruv  (2024) Freely moving mouse retrosplenial cortex recordings
-  (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000987/draft
+citation: Mehrotra, Dhruv ; Skromne Carrasco, Sofia; Peyrache, Adrien (2024) Freely
+  moving mouse retrosplenial cortex recordings (Version draft) [Data set]. DANDI archive.
+  https://dandiarchive.org/dandiset/000987/draft
 contributor:
 - affiliation: []
   email: mdhruv.nov21@gmail.com
@@ -20,16 +21,19 @@ contributor:
   roleName:
   - dcite:ContactPerson
   schemaKey: Person
-- includeInCitation: false
+- email: sofia.skromnecarrasco@mail.mcgill.ca
+  includeInCitation: true
   name: Skromne Carrasco, Sofia
   schemaKey: Person
-- includeInCitation: false
+- email: adrien.peyrache@mcgill.ca
+  includeInCitation: true
   name: Peyrache, Adrien
   schemaKey: Person
 dateCreated: '2024-05-10T15:19:29.192835+00:00'
 description: 'Data used in "Hyperpolarization-Activated Currents Drive Neuronal Activation
   Sequences in Sleep", available at https://www.biorxiv.org/content/10.1101/2023.09.12.557442v1.
-  Collected by Sofia Skromne Carrasco in Peyrache lab.
+  Collected by Sofia Skromne Carrasco in the Peyrache lab. Specifically, this data
+  was used to generate Figure 5F.
 
 
   All sessions include sleep epochs and open field exploration epochs. See the file
@@ -37,8 +41,11 @@ description: 'Data used in "Hyperpolarization-Activated Currents Drive Neuronal 
 
 
   Each NWB file contains: timestamps of detected units, LFP, animal position, head-direction,
-  and sleep scoring (REM/NREM) data.
+  sleep scoring (REM/NREM) data as well as detected UP and DOWN states as used in
+  the study.
 
+
+  Code to reproduce figures in the article can be found at: https://github.com/PeyracheLab/MehrotraLevenstein_2023
 
   '
 ethicsApproval: []
