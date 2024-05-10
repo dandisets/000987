@@ -7,9 +7,36 @@ access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  - name: behavioral approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 1163037056
+  numberOfFiles: 14
+  numberOfSubjects: 3
   schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - SpatialSeries
+  - Position
+  - Units
+  - CompassDirection
+  - ElectrodeGroup
 citation: Mehrotra, Dhruv ; Skromne Carrasco, Sofia; Peyrache, Adrien (2024) Freely
   moving mouse retrosplenial cortex recordings (Version draft) [Data set]. DANDI archive.
   https://dandiarchive.org/dandiset/000987/draft
@@ -29,6 +56,11 @@ contributor:
   includeInCitation: true
   name: Peyrache, Adrien
   schemaKey: Person
+- includeInCitation: false
+  name: Canadian Institutes of Health Research
+  roleName:
+  - dcite:Sponsor
+  schemaKey: Organization
 dateCreated: '2024-05-10T15:19:29.192835+00:00'
 description: 'Data used in "Hyperpolarization-Activated Currents Drive Neuronal Activation
   Sequences in Sleep", available at https://www.biorxiv.org/content/10.1101/2023.09.12.557442v1.
@@ -66,6 +98,12 @@ manifestLocation:
 name: Freely moving mouse retrosplenial cortex recordings
 protocol: []
 relatedResource:
+- identifier: Source Publication
+  name: Hyperpolarization-Activated Currents Drive Neuronal Activation Sequences in
+    Sleep
+  relation: dcite:IsReferencedBy
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
 - name: 'GitHub repository '
   relation: dcite:IsSupplementedBy
   repository: MehrotraLevenstein_2023
