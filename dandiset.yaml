@@ -56,20 +56,27 @@ contributor:
   includeInCitation: true
   name: Peyrache, Adrien
   schemaKey: Person
-- includeInCitation: false
+- awardNumber: ''
+  includeInCitation: false
   name: Canadian Institutes of Health Research
+  roleName:
+  - dcite:Sponsor
+  schemaKey: Organization
+- includeInCitation: false
+  name: Natural Sciences and Engineering Research Council of Canada
   roleName:
   - dcite:Sponsor
   schemaKey: Organization
 dateCreated: '2024-05-10T15:19:29.192835+00:00'
 description: 'Data used in "Hyperpolarization-Activated Currents Drive Neuronal Activation
   Sequences in Sleep", available at https://www.biorxiv.org/content/10.1101/2023.09.12.557442v1.
-  Collected by Sofia Skromne Carrasco in the Peyrache lab. Specifically, this data
-  was used to generate Figure 5F.
+  Dataset includes 14 recordings from 3 mice, with a total of 570 isolated units (31-71
+  units per recording). Collected by Sofia Skromne Carrasco in the Peyrache lab. Specifically,
+  this data was used to generate Figure 5F.
 
 
   All sessions include sleep epochs and open field exploration epochs. See the file
-  metadata for more detailed information regarding each session.
+  metadata for more detailed information regarding each recording.
 
 
   Each NWB file contains: timestamps of detected units, LFP, animal position, head-direction,
