@@ -39,8 +39,8 @@ assetsSummary:
   - CompassDirection
   - ElectrodeGroup
 citation: Mehrotra, Dhruv ; Skromne Carrasco, Sofia; Peyrache, Adrien (2026) Freely
-  moving mouse retrosplenial cortex recordings (Version draft) [Data set]. DANDI Archive.
-  https://dandiarchive.org/dandiset/000987/draft
+  moving mouse retrosplenial cortex recordings (Version 0.260831.1616) [Data set].
+  DANDI Archive. https://doi.org/10.48324/dandi.000987/0.260831.1616
 contributor:
 - affiliation: []
   email: mdhruv.nov21@gmail.com
@@ -69,18 +69,20 @@ contributor:
   - dcite:Sponsor
   schemaKey: Organization
 dateCreated: '2024-05-10T15:19:29.192835+00:00'
+datePublished: '2026-08-31T16:16:54.875290+00:00'
 description: 'Data used in "Hyperpolarization-activated currents drive neuronal activation
   sequences in sleep", available at https://doi.org/10.1016/j.cub.2024.05.048. Dataset
   includes 14 recordings from 3 mice, with a total of 570 isolated units (31-71 units
   per recording). Collected by Sofia Skromne Carrasco in the Peyrache lab. Specifically,
-  this data was used to generate Figure 5F. All sessions include sleep epochs and
-  open field exploration epochs. See the file metadata for more detailed information
-  regarding each recording. Each NWB file contains: timestamps of detected units,
-  LFP, animal position, head-direction, sleep scoring (REM/NREM) data as well as detected
-  UP and DOWN states as used in the study. Code to reproduce figures in the article
-  can be found at: https://github.com/PeyracheLab/MehrotraLevenstein_2023'
+  this data was used to generate Figure 5F.All sessions include sleep epochs and open
+  field exploration epochs. See the file metadata for more detailed information regarding
+  each recording.Each NWB file contains: timestamps of detected units, LFP, animal
+  position, head-direction, sleep scoring (REM/NREM) data as well as detected UP and
+  DOWN states as used in the study.Code to reproduce figures in the article can be
+  found at: https://github.com/PeyracheLab/MehrotraLevenstein_2023'
+doi: 10.48324/dandi.000987/0.260831.1616
 ethicsApproval: []
-id: DANDI:000987/draft
+id: DANDI:000987/0.260831.1616
 identifier: DANDI:000987
 keywords:
 - retrosplenial
@@ -93,8 +95,20 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/000987/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/000987/0.260831.1616/assets.yaml
 name: Freely moving mouse retrosplenial cortex recordings
+publishedBy:
+  endDate: '2026-08-31T16:16:54.875290+00:00'
+  id: urn:uuid:426b4cfa-ca1f-43f8-8eaa-b8cae1b77374
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2026-08-31T16:16:54.875290+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:73ee3b0a-93fd-4639-8d7e-93c0ca78b98d
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - identifier: Source Publication
   name: Hyperpolarization-Activated Currents Drive Neuronal Activation Sequences in
@@ -110,6 +124,6 @@ relatedResource:
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.7
-url: https://dandiarchive.org/dandiset/000987/draft
-version: draft
+url: https://dandiarchive.org/dandiset/000987/0.260831.1616
+version: 0.260831.1616
 wasGeneratedBy: []
