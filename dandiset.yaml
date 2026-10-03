@@ -3,7 +3,13 @@
 # and obtained from the dandiarchive.
 '@context': 
   https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json
-about: []
+about:
+- identifier: https://purl.brain-bican.org/ontology/mbao/MBA_254
+  name: Retrosplenial area
+  schemaKey: Anatomy
+- identifier: https://www.cognitiveatlas.org/concept/id/trm_5159c70d0e98e
+  name: sleep
+  schemaKey: GenericType
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
@@ -39,37 +45,60 @@ assetsSummary:
   - CompassDirection
   - ElectrodeGroup
 citation: Mehrotra, Dhruv ; Skromne Carrasco, Sofia; Peyrache, Adrien (2026) Freely
-  moving mouse retrosplenial cortex recordings (Version 0.260831.1620) [Data set].
-  DANDI Archive. https://doi.org/10.48324/dandi.000987/0.260831.1620
+  moving mouse retrosplenial cortex recordings (Version 0.261003.2342) [Data set].
+  DANDI Archive. https://doi.org/10.48324/dandi.000987/0.261003.2342
 contributor:
-- affiliation: []
+- affiliation:
+  - identifier: https://ror.org/01pxwe438
+    name: McGill University
+    schemaKey: Affiliation
   email: mdhruv.nov21@gmail.com
+  identifier: 0000-0001-5813-3218
   includeInCitation: true
   name: 'Mehrotra, Dhruv '
   roleName:
   - dcite:ContactPerson
   schemaKey: Person
-- email: sofia.skromnecarrasco@mail.mcgill.ca
+- affiliation:
+  - identifier: https://ror.org/01pxwe438
+    name: McGill University
+    schemaKey: Affiliation
+  email: sofia.skromnecarrasco@mail.mcgill.ca
+  identifier: 0009-0007-2288-7203
   includeInCitation: true
   name: Skromne Carrasco, Sofia
   schemaKey: Person
-- email: adrien.peyrache@mcgill.ca
+- affiliation:
+  - identifier: https://ror.org/05ghs6f64
+    name: Montreal Neurological Institute and Hospital
+    schemaKey: Affiliation
+  email: adrien.peyrache@mcgill.ca
+  identifier: 0000-0001-9708-309X
   includeInCitation: true
   name: Peyrache, Adrien
   schemaKey: Person
-- awardNumber: ''
+- awardNumber: '155957'
+  identifier: https://ror.org/01gavpb45
   includeInCitation: false
   name: Canadian Institutes of Health Research
   roleName:
   - dcite:Sponsor
   schemaKey: Organization
-- includeInCitation: false
+- awardNumber: RGPIN-2018-04600
+  identifier: https://ror.org/01h531d29
+  includeInCitation: false
   name: Natural Sciences and Engineering Research Council of Canada
   roleName:
   - dcite:Sponsor
   schemaKey: Organization
+- awardNumber: '180330'
+  identifier: https://ror.org/01gavpb45
+  name: Canadian Institutes of Health Research
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2024-05-10T15:19:29.192835+00:00'
-datePublished: '2026-08-31T16:20:17.431547+00:00'
+datePublished: '2026-10-03T23:42:59.710296+00:00'
 description: 'Data used in "Hyperpolarization-activated currents drive neuronal activation
   sequences in sleep", available at https://doi.org/10.1016/j.cub.2024.05.048. Dataset
   includes 14 recordings from 3 mice, with a total of 570 isolated units (31-71 units
@@ -80,9 +109,9 @@ description: 'Data used in "Hyperpolarization-activated currents drive neuronal 
   LFP, animal position, head-direction, sleep scoring (REM/NREM) data as well as detected
   UP and DOWN states as used in the study. Code to reproduce figures in the article
   can be found at: https://github.com/PeyracheLab/MehrotraLevenstein_2023'
-doi: 10.48324/dandi.000987/0.260831.1620
+doi: 10.48324/dandi.000987/0.261003.2342
 ethicsApproval: []
-id: DANDI:000987/0.260831.1620
+id: DANDI:000987/0.261003.2342
 identifier: DANDI:000987
 keywords:
 - retrosplenial
@@ -95,35 +124,37 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://dandiarchive.s3.amazonaws.com/dandisets/000987/0.260831.1620/assets.yaml
+- https://dandiarchive.s3.amazonaws.com/dandisets/000987/0.261003.2342/assets.yaml
 name: Freely moving mouse retrosplenial cortex recordings
 publishedBy:
-  endDate: '2026-08-31T16:20:17.431547+00:00'
-  id: urn:uuid:8dea1ac9-66fa-4d37-95f3-48429dfdd1ca
+  endDate: '2026-10-03T23:42:59.710296+00:00'
+  id: urn:uuid:355fb9ef-ad07-4861-afc2-8b44e88e89c0
   name: DANDI publish
   schemaKey: PublishActivity
-  startDate: '2026-08-31T16:20:17.431547+00:00'
+  startDate: '2026-10-03T23:42:59.710296+00:00'
   wasAssociatedWith:
-  - id: urn:uuid:e69ef6c8-66fc-4a17-be9f-f05c72feb472
+  - id: urn:uuid:c27806eb-6939-4751-9c2b-0566e320a626
     identifier: RRID:SCR_017571
     name: DANDI API
     schemaKey: Software
     version: 0.1.0
 relatedResource:
-- identifier: Source Publication
+- identifier: doi:10.1016/j.cub.2024.05.048
   name: Hyperpolarization-Activated Currents Drive Neuronal Activation Sequences in
     Sleep
   relation: dcite:IsReferencedBy
   resourceType: dcite:JournalArticle
   schemaKey: Resource
+  url: https://doi.org/10.1016/j.cub.2024.05.048
 - name: 'GitHub repository '
   relation: dcite:IsSupplementedBy
   repository: MehrotraLevenstein_2023
   schemaKey: Resource
   url: https://github.com/PeyracheLab/MehrotraLevenstein_2023/
+releaseNotes: Improved metadata
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.7
-url: https://dandiarchive.org/dandiset/000987/0.260831.1620
-version: 0.260831.1620
+url: https://dandiarchive.org/dandiset/000987/0.261003.2342
+version: 0.261003.2342
 wasGeneratedBy: []
